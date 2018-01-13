@@ -22,7 +22,7 @@ pod 'ReactiveNetwork'
 
 ## Author
 
-fa35de542d80347b4a3940d4945d1685503dec3d, Jimmy.Aumard@nestle.com
+jaumard, jimmy.aumard@gmail.com
 
 ## License
 

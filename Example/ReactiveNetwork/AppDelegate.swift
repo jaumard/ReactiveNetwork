@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import ReactiveNetwork
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    public let reactiveNetwork = ReactiveNetwork.Builder(baseUrl: "http://jsonplaceholder.typicode.com/")
+            .addInterceptor(interceptor: HeaderInterceptor())
+            .addInterceptor(interceptor: LogInterceptor()).build()
     var window: UIWindow?
 
 

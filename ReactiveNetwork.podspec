@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ReactiveNetwork'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ReactiveNetwork.'
+  s.summary          = 'ReactiveNetwork is a small library to allow HTTP network call with RXSwift and parse the JSON result into Swift model object.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ReactiveNetwork is a small library to allow HTTP network call with RXSwift and parse the JSON result into Swift model object
                        DESC
 
-  s.homepage         = 'https://github.com/fa35de542d80347b4a3940d4945d1685503dec3d/ReactiveNetwork'
+  s.homepage         = 'https://github.com/jaumard/ReactiveNetwork'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'fa35de542d80347b4a3940d4945d1685503dec3d' => 'Jimmy.Aumard@nestle.com' }
-  s.source           = { :git => 'https://github.com/fa35de542d80347b4a3940d4945d1685503dec3d/ReactiveNetwork.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'jaumard' => 'jimmy.aumard@gmail.com' }
+  s.source           = { :git => 'https://github.com/jaumard/ReactiveNetwork.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/jaumard'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ReactiveNetwork/Classes/**/*'
   
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift', '~> 4.0'
+  s.dependency 'RxCocoa', '~> 4.0'
 end

@@ -10,11 +10,32 @@
 		0B943D28A97807180BF3D1AD /* Pods_ReactiveNetwork_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD8F2AC7E4A266E4670B7E5 /* Pods_ReactiveNetwork_Tests.framework */; };
 		5A102216798B4DAB47DAF6AC /* Pods_ReactiveNetwork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD736D6EFE98DB61CF0AF6D /* Pods_ReactiveNetwork_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		937E60AF197708E2F1997CB3 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E60F1784C9E4220C4536F /* BaseViewModel.swift */; };
+		937E61C019F326E1F145F35F /* HeaderInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6145840E7C63BC4AACE2 /* HeaderInterceptor.swift */; };
+		937E61D3C1D74E6282A5187F /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6842149761F951C30DB9 /* UserDetailsViewModel.swift */; };
+		937E6269841BB3750021E562 /* UIViewController+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E693C75B6C436E99380F6 /* UIViewController+Popup.swift */; };
+		937E633A91D94A873D8BC7CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E63ACF291DFB5E8FBDE11 /* User.swift */; };
+		937E641FB03AF781FD2E9A2C /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E68C5302441C2D1CC1C6D /* PostViewModel.swift */; };
+		937E661B8F774D08E8F14779 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6EADA919F434372A09DB /* UserViewController.swift */; };
+		937E68EDEAA0B1B806288682 /* FormPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6A982DED590553945596 /* FormPostViewController.swift */; };
+		937E69F85B3809B273735DC5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E601A95F942444BF750B6 /* UserViewModel.swift */; };
+		937E6AF29F64C43DB93216C6 /* UserNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6FB846512D9673A320C7 /* UserNetworkDataSource.swift */; };
+		937E6C7488091652810FF9D0 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6B688CC367D9750CCD4A /* PostRepository.swift */; };
+		937E6C83E7FBD0F4425A71F2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E64CDA5BCE9AE645FD64F /* Post.swift */; };
+		937E6CD8869D5647CFFFFDA6 /* FormPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6361ADC68180D30E02B0 /* FormPostViewModel.swift */; };
+		937E6D3D89CB7F2C6C2C3F9E /* PostNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6A5A3E233C70A941A393 /* PostNetworkDataSource.swift */; };
+		937E6DCEF2DD656DE1B27093 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E608F45C8B4D13A8B095A /* Repository.swift */; };
+		937E6EAE643DB4F64AF17E59 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6FA0762464F9AE2AC3F3 /* UserRepository.swift */; };
+		937E6F1B7309594309931FD8 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6015A6F80A77479EB23D /* UserDetailsViewController.swift */; };
+		937E6F5528193EB6C2277EC6 /* NetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E65741070CFD0FBCF93B4 /* NetworkDataSource.swift */; };
+		937E6F5824162AA9484FBF63 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E6D63DC0DFD1EA88FE99E /* PostViewController.swift */; };
+		937E6FCFC7DE4D1E92AD11E4 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E60F7CC327FE495B85ECC /* Dynamic.swift */; };
+		BD6571BD200A6B6F00ECDC27 /* UserDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6571BC200A6B6F00ECDC27 /* UserDetailsView.xib */; };
+		BD6571BF200A6C0100ECDC27 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6571BE200A6C0100ECDC27 /* UserDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +56,6 @@
 		607FACD01AFB9204008FA782 /* ReactiveNetwork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveNetwork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -43,9 +63,33 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6212F27DFD3569232EC6436E /* Pods-ReactiveNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveNetwork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveNetwork_Tests/Pods-ReactiveNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		85AB530BE497E923E5DDCC52 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8616BAC74A370FD42FE7B2A3 /* ReactiveNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ReactiveNetwork.podspec; path = ../ReactiveNetwork.podspec; sourceTree = "<group>"; };
-		A8E01ED98F6642647A41BE24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		85AB530BE497E923E5DDCC52 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8616BAC74A370FD42FE7B2A3 /* ReactiveNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReactiveNetwork.podspec; path = ../ReactiveNetwork.podspec; sourceTree = "<group>"; };
+		937E6015A6F80A77479EB23D /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		937E601A95F942444BF750B6 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		937E608F45C8B4D13A8B095A /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		937E60F1784C9E4220C4536F /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		937E60F7CC327FE495B85ECC /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		937E6145840E7C63BC4AACE2 /* HeaderInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderInterceptor.swift; sourceTree = "<group>"; };
+		937E6361ADC68180D30E02B0 /* FormPostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPostViewModel.swift; sourceTree = "<group>"; };
+		937E63ACF291DFB5E8FBDE11 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		937E64CDA5BCE9AE645FD64F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		937E6566271C58C020169192 /* Interceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interceptor.swift; path = ../ReactiveNetwork/Classes/Interceptor.swift; sourceTree = "<group>"; };
+		937E65741070CFD0FBCF93B4 /* NetworkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataSource.swift; sourceTree = "<group>"; };
+		937E6842149761F951C30DB9 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		937E68C5302441C2D1CC1C6D /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		937E693C75B6C436E99380F6 /* UIViewController+Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Popup.swift"; sourceTree = "<group>"; };
+		937E6A5A3E233C70A941A393 /* PostNetworkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNetworkDataSource.swift; sourceTree = "<group>"; };
+		937E6A982DED590553945596 /* FormPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPostViewController.swift; sourceTree = "<group>"; };
+		937E6B688CC367D9750CCD4A /* PostRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		937E6D63DC0DFD1EA88FE99E /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		937E6E903EAABD4491A32094 /* ReactiveNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactiveNetwork.swift; path = ../ReactiveNetwork/Classes/ReactiveNetwork.swift; sourceTree = "<group>"; };
+		937E6EADA919F434372A09DB /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		937E6FA0762464F9AE2AC3F3 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		937E6FB846512D9673A320C7 /* UserNetworkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNetworkDataSource.swift; sourceTree = "<group>"; };
+		A8E01ED98F6642647A41BE24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BD6571BC200A6B6F00ECDC27 /* UserDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsView.xib; sourceTree = "<group>"; };
+		BD6571BE200A6C0100ECDC27 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		EDD8F2AC7E4A266E4670B7E5 /* Pods_ReactiveNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +131,8 @@
 				607FACD11AFB9204008FA782 /* Products */,
 				B66161BA9935E453A6E64FD6 /* Pods */,
 				4BC48905CC3FFA83D0DE7D34 /* Frameworks */,
+				937E6E903EAABD4491A32094 /* ReactiveNetwork.swift */,
+				937E6566271C58C020169192 /* Interceptor.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +149,17 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				937E689C4E8FF37B126CCE04 /* User */,
+				937E64F868C1D3BA68D91954 /* Network */,
+				937E60F1784C9E4220C4536F /* BaseViewModel.swift */,
+				937E6C13EE1F517E45C768D8 /* Post */,
+				937E61AB92E935058627C874 /* Data */,
+				937E60F7CC327FE495B85ECC /* Dynamic.swift */,
+				937E693C75B6C436E99380F6 /* UIViewController+Popup.swift */,
 			);
 			name = "Example for ReactiveNetwork";
 			path = ReactiveNetwork;
@@ -148,6 +200,92 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		937E61AB92E935058627C874 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				937E608F45C8B4D13A8B095A /* Repository.swift */,
+				937E65741070CFD0FBCF93B4 /* NetworkDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		937E64F868C1D3BA68D91954 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				937E6145840E7C63BC4AACE2 /* HeaderInterceptor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		937E689C4E8FF37B126CCE04 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				937E6CF18B3E0317DBBE9439 /* Details */,
+				937E69C09367499BC829F948 /* Data */,
+				937E6ED565B39AB23267E1EB /* List */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		937E69C09367499BC829F948 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				937E6FA0762464F9AE2AC3F3 /* UserRepository.swift */,
+				937E6FB846512D9673A320C7 /* UserNetworkDataSource.swift */,
+				937E63ACF291DFB5E8FBDE11 /* User.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		937E6C13EE1F517E45C768D8 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				937E6DC194D8FEFEF96DE066 /* Data */,
+				937E68C5302441C2D1CC1C6D /* PostViewModel.swift */,
+				937E6D63DC0DFD1EA88FE99E /* PostViewController.swift */,
+				937E6DE6FF9DDAAE552D1F3D /* Form */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		937E6CF18B3E0317DBBE9439 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				BD6571BB200A6AF900ECDC27 /* View */,
+				937E6015A6F80A77479EB23D /* UserDetailsViewController.swift */,
+				937E6842149761F951C30DB9 /* UserDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		937E6DC194D8FEFEF96DE066 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				937E64CDA5BCE9AE645FD64F /* Post.swift */,
+				937E6A5A3E233C70A941A393 /* PostNetworkDataSource.swift */,
+				937E6B688CC367D9750CCD4A /* PostRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		937E6DE6FF9DDAAE552D1F3D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				937E6A982DED590553945596 /* FormPostViewController.swift */,
+				937E6361ADC68180D30E02B0 /* FormPostViewModel.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		937E6ED565B39AB23267E1EB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				937E601A95F942444BF750B6 /* UserViewModel.swift */,
+				937E6EADA919F434372A09DB /* UserViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		B66161BA9935E453A6E64FD6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +295,15 @@
 				6212F27DFD3569232EC6436E /* Pods-ReactiveNetwork_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD6571BB200A6AF900ECDC27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD6571BC200A6B6F00ECDC27 /* UserDetailsView.xib */,
+				BD6571BE200A6C0100ECDC27 /* UserDetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				BD6571BD200A6B6F00ECDC27 /* UserDetailsView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -272,10 +420,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveNetwork_Example/Pods-ReactiveNetwork_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ReactiveNetwork/ReactiveNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,8 +527,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				937E61C019F326E1F145F35F /* HeaderInterceptor.swift in Sources */,
+				937E60AF197708E2F1997CB3 /* BaseViewModel.swift in Sources */,
+				937E6F1B7309594309931FD8 /* UserDetailsViewController.swift in Sources */,
+				937E6EAE643DB4F64AF17E59 /* UserRepository.swift in Sources */,
+				937E6AF29F64C43DB93216C6 /* UserNetworkDataSource.swift in Sources */,
+				BD6571BF200A6C0100ECDC27 /* UserDetailsView.swift in Sources */,
+				937E633A91D94A873D8BC7CE /* User.swift in Sources */,
+				937E61D3C1D74E6282A5187F /* UserDetailsViewModel.swift in Sources */,
+				937E6C83E7FBD0F4425A71F2 /* Post.swift in Sources */,
+				937E6D3D89CB7F2C6C2C3F9E /* PostNetworkDataSource.swift in Sources */,
+				937E6C7488091652810FF9D0 /* PostRepository.swift in Sources */,
+				937E6DCEF2DD656DE1B27093 /* Repository.swift in Sources */,
+				937E6F5528193EB6C2277EC6 /* NetworkDataSource.swift in Sources */,
+				937E641FB03AF781FD2E9A2C /* PostViewModel.swift in Sources */,
+				937E6F5824162AA9484FBF63 /* PostViewController.swift in Sources */,
+				937E69F85B3809B273735DC5 /* UserViewModel.swift in Sources */,
+				937E661B8F774D08E8F14779 /* UserViewController.swift in Sources */,
+				937E6FCFC7DE4D1E92AD11E4 /* Dynamic.swift in Sources */,
+				937E6269841BB3750021E562 /* UIViewController+Popup.swift in Sources */,
+				937E68EDEAA0B1B806288682 /* FormPostViewController.swift in Sources */,
+				937E6CD8869D5647CFFFFDA6 /* FormPostViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
