@@ -6,16 +6,6 @@
 import RxSwift
 import RxCocoa
 
-extension Single {
-    public func asCompletable() -> Completable {
-        return self.asObservable().ignoreElements()
-    }
-
-    public func asMaybe() -> Maybe<Element> {
-        return self.asObservable().asMaybe()
-    }
-}
-
 public enum ReactiveNetworkError: Error {
     case invalidURL
     case encoding(error: Error)
@@ -78,17 +68,25 @@ public class ReactiveNetwork {
     private func getRequest(method: String, path: String, queryParams: Dictionary<String, String>,
                             pathParams: Dictionary<String, String>,
                             headers: Dictionary<String, String>) -> Single<URLRequest> {
-        let query = queryParams.map {
-            "\($0)=\($1)"
-        }.joined(separator: "&")
-
         var fullPath = path
 
         pathParams.forEach { key, value in
             fullPath = fullPath.replacingOccurrences(of: "{\(key)}", with: value)
         }
 
-        guard let url = URL(string: baseUrl.appending(fullPath).appending("?\(query)")) else {
+        guard var base = URLComponents(string: baseUrl) else {
+            return Single.error(ReactiveNetworkError.invalidURL)
+        }
+
+        base.path = "\(base.path)\(fullPath)"
+
+        let query = queryParams.map {
+            URLQueryItem(name: $0, value: $1)
+        }
+
+        base.queryItems = query
+
+        guard let url = base.url else {
             return Single.error(ReactiveNetworkError.invalidURL)
         }
 
@@ -118,7 +116,8 @@ public class ReactiveNetwork {
         }
     }
 
-    private func requestWithBody<T: Codable>(method: String, path: String,
+    private func requestWithBody<T: Codable>(method: String,
+                                             path: String,
                                              body: T,
                                              queryParams: Dictionary<String, String>,
                                              pathParams: Dictionary<String, String>,
@@ -133,7 +132,9 @@ public class ReactiveNetwork {
                 }
     }
 
-    private func requestWithoutBody(method: String, path: String, queryParams: Dictionary<String, String>,
+    private func requestWithoutBody(method: String,
+                                    path: String,
+                                    queryParams: Dictionary<String, String>,
                                     pathParams: Dictionary<String, String>,
                                     headers: Dictionary<String, String>) -> Single<Data> {
         return getRequest(method: method, path: path, queryParams: queryParams, pathParams: pathParams, headers: headers)
@@ -142,7 +143,8 @@ public class ReactiveNetwork {
                 }
     }
 
-    public func doRequest<T: Codable, R: Codable>(method: String = "POST", path: String,
+    public func doRequest<T: Codable, R: Codable>(method: String = "POST",
+                                                  path: String,
                                                   body: T,
                                                   queryParams: Dictionary<String, String> = [:],
                                                   pathParams: Dictionary<String, String> = [:],
@@ -153,7 +155,8 @@ public class ReactiveNetwork {
                 }
     }
 
-    public func doRequest<T: Codable>(method: String = "POST", path: String,
+    public func doRequest<T: Codable>(method: String = "POST",
+                                      path: String,
                                       body: T,
                                       queryParams: Dictionary<String, String> = [:],
                                       pathParams: Dictionary<String, String> = [:],
@@ -162,7 +165,9 @@ public class ReactiveNetwork {
                 .asCompletable()
     }
 
-    public func doRequest<T: Codable>(method: String = "GET", path: String, queryParams: Dictionary<String, String> = [:],
+    public func doRequest<T: Codable>(method: String = "GET",
+                                      path: String,
+                                      queryParams: Dictionary<String, String> = [:],
                                       pathParams: Dictionary<String, String> = [:],
                                       headers: Dictionary<String, String> = [:]) -> Single<T> {
         return requestWithoutBody(method: method, path: path, queryParams: queryParams, pathParams: pathParams, headers: headers)
@@ -171,7 +176,9 @@ public class ReactiveNetwork {
                 }
     }
 
-    public func doRequest(method: String = "DELETE", path: String, queryParams: Dictionary<String, String> = [:],
+    public func doRequest(method: String = "DELETE",
+                          path: String,
+                          queryParams: Dictionary<String, String> = [:],
                           pathParams: Dictionary<String, String> = [:],
                           headers: Dictionary<String, String> = [:]) -> Completable {
         return requestWithoutBody(method: method, path: path, queryParams: queryParams, pathParams: pathParams, headers: headers).asCompletable()

@@ -74,7 +74,6 @@
 		937E6361ADC68180D30E02B0 /* FormPostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPostViewModel.swift; sourceTree = "<group>"; };
 		937E63ACF291DFB5E8FBDE11 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		937E64CDA5BCE9AE645FD64F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		937E6566271C58C020169192 /* Interceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interceptor.swift; path = ../ReactiveNetwork/Classes/Interceptor.swift; sourceTree = "<group>"; };
 		937E65741070CFD0FBCF93B4 /* NetworkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataSource.swift; sourceTree = "<group>"; };
 		937E6842149761F951C30DB9 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		937E68C5302441C2D1CC1C6D /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
@@ -83,7 +82,6 @@
 		937E6A982DED590553945596 /* FormPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPostViewController.swift; sourceTree = "<group>"; };
 		937E6B688CC367D9750CCD4A /* PostRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		937E6D63DC0DFD1EA88FE99E /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		937E6E903EAABD4491A32094 /* ReactiveNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactiveNetwork.swift; path = ../ReactiveNetwork/Classes/ReactiveNetwork.swift; sourceTree = "<group>"; };
 		937E6EADA919F434372A09DB /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		937E6FA0762464F9AE2AC3F3 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		937E6FB846512D9673A320C7 /* UserNetworkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNetworkDataSource.swift; sourceTree = "<group>"; };
@@ -131,8 +129,6 @@
 				607FACD11AFB9204008FA782 /* Products */,
 				B66161BA9935E453A6E64FD6 /* Pods */,
 				4BC48905CC3FFA83D0DE7D34 /* Frameworks */,
-				937E6E903EAABD4491A32094 /* ReactiveNetwork.swift */,
-				937E6566271C58C020169192 /* Interceptor.swift */,
 			);
 			sourceTree = "<group>";
 		};
