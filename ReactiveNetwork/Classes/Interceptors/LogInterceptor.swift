@@ -5,7 +5,7 @@
 
 import Foundation
 
-public class LogInterceptor: RequestInterceptor, ResponseInterceptor {
+open class LogInterceptor: RequestInterceptor, ResponseInterceptor {
     let level: Level
 
     public enum Level {

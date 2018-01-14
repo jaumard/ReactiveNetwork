@@ -7,13 +7,14 @@ import ReactiveNetwork
 import RxSwift
 
 class PostRepository: Repository<Post> {
-
+    let networkDataSource: PostNetworkDataSource
     init(_ networkDataSource: PostNetworkDataSource) {
+        self.networkDataSource = networkDataSource
         super.init(networkDataSource)
     }
 
     func retrieveAllForUser(_ user: User) -> Single<[Post]> {
-        return (networkDataSource as! PostNetworkDataSource).retrieveAllForUser(user)
+        return networkDataSource.retrieveAllForUser(user)
     }
 
 }

@@ -13,15 +13,6 @@ public enum ReactiveNetworkError: Error {
     case networking(response: HTTPURLResponse)
 }
 
-public enum Method: String {
-    case GET = "GET"
-    case POST = "POST"
-    case DELETE = "DELETE"
-    case PATCH = "PATCH"
-    case PUT = "PUT"
-    case OPTIONS = "OPTIONS"
-}
-
 public class ReactiveNetwork {
     private let baseUrl: String
     private let encoder = JSONEncoder()
@@ -205,7 +196,7 @@ public class ReactiveNetwork {
 
         public func withInterceptors(interceptors: Array<Interceptor>) -> Builder {
             interceptors.forEach { (interceptor: Interceptor) in
-                self.addInterceptor(interceptor: interceptor)
+                _ = self.addInterceptor(interceptor: interceptor)
             }
             return self
         }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveNetwork'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'ReactiveNetwork is a small library to allow HTTP network call with RXSwift and parse the JSON result into Swift model object.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-ReactiveNetwork is a small library to allow HTTP network call with RXSwift and parse the JSON result into Swift model object
+ReactiveNetwork is a small library to allow HTTP network call with RXSwift and parse the JSON result into Swift model object.
+It provide basic Interceptors to log your request for easy debugging and to set headers globally.
+It also provide some basic class for CRUD operation (NetworkDataSource and Repository class).
                        DESC
 
   s.homepage         = 'https://github.com/jaumard/ReactiveNetwork'

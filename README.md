@@ -124,6 +124,42 @@ class UserNetworkDataSource {
 }
 ```
 
+Or you can use the build in one like this: 
+
+```swift
+class UserNetworkDataSource: NetworkDataSource<User> {
+
+    init(_ reactiveNetwork: ReactiveNetwork) {
+        super.init("users", reactiveNetwork: ReactiveNetwork)
+    }
+}
+```
+
+## Interceptors
+Now is you need to modify the request or the response globally here is where the interceptors are useful.
+There two build in interceptors, LogInterceptor and HeaderInterceptor. They can be added with the method `addInterceptor` of ReactiveNetwork.Builder.
+You can add multiple interceptors, they will be executed in order.
+
+### LogInterceptor
+It will log all request and response on the console for you, should be useful to debug your calls.
+```swift
+LogInterceptor(level: .debug)
+```
+You have three level: 
+- none, will not log information
+- info, will log basic information, url, status code...
+- debug, will log all information, url, headers, body, status code...
+
+### HeaderInterceptor
+It will globally add headers on all your request for you. Just pass them during initialisation.
+```swift
+HeaderInterceptor(["Content-Type": "application/json", "Accept": "application/json"])
+```
+
+### Custom Interceptor
+You can create your own interceptors by implementing two protocols, `RequestInterceptor` if your interceptor need to intercept the request and `ResponseInterceptor` to intercept the response.
+You can check the code of the built it interceptors as example. 
+
 ## Requirements
 
 ## Installation
