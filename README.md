@@ -171,6 +171,16 @@ it, simply add the following line to your Podfile:
 pod 'ReactiveNetwork'
 ```
 
+## Release
+To deploy this pod:
+```ruby
+pod lib lint
+git tag 'x.x.x'
+git push --tags
+pod trunk push ReactiveNetwork.podspec
+```
+
+
 ## Author
 
 jaumard, jimmy.aumard@gmail.com

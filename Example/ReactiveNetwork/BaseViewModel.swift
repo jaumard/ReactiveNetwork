@@ -9,7 +9,7 @@ import RxSwift
 class BaseViewModel {
     let bag = DisposeBag()
     let loading: Dynamic<Bool> = Dynamic(false)
-    var error: Dynamic<Error?> = Dynamic(nil)
+    let error: Dynamic<Error?> = Dynamic(nil)
 
     func bind() {
     }

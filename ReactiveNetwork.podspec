@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveNetwork'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'ReactiveNetwork is a small library to allow HTTP network call with RXSwift and parse the JSON result into Swift model object.'
 
 # This description is used to generate tags and improve search results.
